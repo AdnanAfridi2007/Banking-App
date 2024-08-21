@@ -11,7 +11,7 @@ const ibmPlexSerif = IBM_Plex_Serif({
 
 export const metadata: Metadata = {
   title: "Create Next App",
-  description: 'Horizen is a modren banking platform for everyone',
+  description: 'Horizen is a modern banking platform for everyone',
   icons: {
     icon: '/icons/logo.svg'
   }
@@ -19,12 +19,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${ibmPlexSerif.variable}`}>{children}</body>
+      <body className={`${inter.variable} ${ibmPlexSerif.variable}`}>
+        {children}
+      </body>
     </html>
   );
 }
