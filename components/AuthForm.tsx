@@ -174,3 +174,4 @@ const AuthForm = ({ type }: { type: string }) => {
 }
 
 export default AuthForm
+// Updated on 2025-07-10T18:00:18+05:00
